@@ -15,12 +15,16 @@ class _DrawerScreenState extends State<DrawerScreen> {
     return Drawer(
       child: ListView(
         children: <Widget>[
-          UserAccountsDrawerHeader(
-            accountName: Text("Rio Fahlevi"),
-            currentAccountPicture: CircleAvatar(
-              backgroundImage: AssetImage("../assets/img/myfoto.jpeg"),
+          Container(
+            color: Color(0XFFFF6DA7),
+            child: UserAccountsDrawerHeader(
+              accountName: Text("Rio Fahlevi"),
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: AssetImage("../assets/img/myfoto.jpeg"),
+              ),
+              accountEmail: Text("riofahlevi2011@gmail.com"),
+              decoration: BoxDecoration(color: const Color(0XFFFF6DA7)),
             ),
-            accountEmail: Text("riofahlevi2011@gmail.com"),
           ),
           DrawerListTile(
             iconData: Icons.group,
@@ -70,6 +74,7 @@ class DrawerListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      splashColor: Color(0XFFFF6DA7),
       onTap: onTilePressed,
       dense: true,
       leading: Icon(iconData),

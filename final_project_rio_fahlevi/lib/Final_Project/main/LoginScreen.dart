@@ -1,7 +1,7 @@
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/material.dart';
-import 'package:sanber_app_flutter/Tugas/Tugas12/homescreen.dart';
+import 'package:sanber_app_flutter/Final_Project/main/homescreen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -133,8 +133,8 @@ class LoginScreen extends StatelessWidget {
                             borderRadius: BorderRadius.circular(20),
                             splashColor: Colors.amber,
                             onTap: () {
-                              Navigator.of(context)
-                                  .push(MaterialPageRoute(builder: (context) {
+                              Navigator.of(context).pushReplacement(
+                                  MaterialPageRoute(builder: (context) {
                                 return HomeScreen();
                               }));
                             },

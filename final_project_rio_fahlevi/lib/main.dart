@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sanber_app_flutter/Tugas/Tugas12/LoginScreen.dart';
+import 'package:sanber_app_flutter/Final_Project/main/LoginScreen.dart';
+import 'package:sanber_app_flutter/Final_Project/main/CardProfile.dart';
 
 void main() {
   runApp(const MyApp());

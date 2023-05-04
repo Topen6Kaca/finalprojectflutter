@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:sanber_app_flutter/Tugas/Tugas12/DrawerScreen.dart';
+import 'package:sanber_app_flutter/Final_Project/main/DrawerScreen.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
+import 'package:sanber_app_flutter/Final_Project/main/CardProfile.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -41,6 +42,16 @@ class HomeScreen extends StatelessWidget {
                 IconButton(
                   icon: Icon(Icons.extension),
                   onPressed: () {},
+                  color: Color(0xffff4891),
+                ),
+                IconButton(
+                  icon: Icon(Icons.manage_accounts),
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (context) {
+                      return CardProfile();
+                    }));
+                  },
                   color: Color(0xffff4891),
                 ),
               ],
